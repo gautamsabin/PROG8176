@@ -8,8 +8,6 @@ COPY . ./
 # Restore as distinct layers
 RUN dotnet restore
 
-RUN dotnet build
-
 # Build and publish a release
 RUN dotnet publish -c Release -o out
 
